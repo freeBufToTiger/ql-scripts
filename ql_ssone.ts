@@ -1,16 +1,3 @@
-/*
- * @Author: renxia
- * @Date: 2024-02-22 17:05:00
- * @LastEditors: renxia
- * @LastEditTime: 2024-03-12 11:27:30
- * @Description: ssone机场签到。注册： https://m.ssonecloud.com/register?aff=vap2VlUi
-
- cron: 21 9 * * *
- 环节变量： V2BOARD_HOST 可选。可以指定任何基于 V2Board 搭建的机场用于签到
- 环境变量： SSONE 必填。格式： 邮箱#密码#HOST，HOST 可选。也可以是 cookie（有效期一个星期）。多个账户以 & 或 \n 换行分割
-  示例：process.env.SSONE=邮箱1#密码1&邮箱2#密码2#HOST
-  或：process.env.SSONE=cookie1&cookie2
- */
 import { Env } from './utils';
 
 const $ = new Env('ssone机场签到');
