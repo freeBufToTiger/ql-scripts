@@ -1,14 +1,3 @@
-/*
- * @Author: renxia
- * @Date: 2024-03-12 23:52:46
- * @LastEditors: renxia
- * @LastEditTime: 2024-05-30 09:21:02
- * @See {https://mirror.ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js | 参考}
- cron: 25 8 * * *
- new Env('爱奇艺签到')
- 环境变量: IQIYI_COOKIE 抓取请求中的 cookie 。多账户用 & 或换行分割
- */
-
 import { AnyObject, md5, sleep, toQueryString, cookieParse } from '@lzwme/fe-utils';
 import { Env } from './utils';
 
