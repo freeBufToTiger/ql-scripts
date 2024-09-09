@@ -1,14 +1,3 @@
-/*
- * @Author: renxia
- * @Date: 2024-02-22 17:05:00
- * @LastEditors: renxia
- * @LastEditTime: 2024-05-07 10:20:31
- * @Description: 同花顺签到。奖励：积分换优惠券、积分抽奖（只有虚拟奖品，接口数据里没有实物）
-
- cron: 55 8 * * *
- 环境变量： ths_cookie 抓包 https://eq.10jqka.com.cn 请求 header 里面的 cookie。多账号用 & 或换行分割
-  示例：export ths_cookie=""
- */
 import { Env } from './utils';
 
 const $ = new Env('同花顺签到');
