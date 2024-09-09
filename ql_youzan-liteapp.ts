@@ -1,19 +1,3 @@
-/*
- * @Author: renxia
- * @Date: 2024-04-01 09:34:40
- * @LastEditors: renxia
- * @LastEditTime: 2024-04-08 11:59:08
- * @Description: 有赞小程序签到
- * @see https://github.com/dreamtonight/js/blob/main/youzan.js
- *
- * new Env('有赞小程序签到');
- * cron: 55 8 * * *
- * 环境变量： youzan_le_data 。格式：checkinId:sessionId##desc，多账号 @、& 或换行 分割。
- *  checkinId 为 url 中的参数
- *  sessionId 为 Cookie 中 KDTWEAPPSESSIONID 的值
- *  desc 可选。
- */
-
 import { Env } from './utils';
 
 const $ = new Env('有赞小程序签到', { sep: ['@', '&', '\n'] });
